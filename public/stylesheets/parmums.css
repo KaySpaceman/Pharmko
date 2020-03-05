@@ -1,0 +1,35 @@
+#container .p {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.5rem;
+    position: relative;
+    width: 100%;
+}
+#page-heading {
+    margin: 0 0 3rem;
+    text-align: center;
+}
+
+h1.pm{
+    font-size: 25pt;
+    font-family: Monospace, "OCR A Std";
+    font-style: oblique;
+    color: #700038;
+}
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 18px;
+}
+table{
+    border-spacing: 0;
+}
+h2.pm{
+    color: #700038;
+    font-size: 20pt;
+    font-family: Monospace, "OCR A Std";
+    font-style: oblique;
+}
