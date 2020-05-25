@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+const products = require('../models/Product');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -20,8 +21,10 @@ router.get('/loterija', function(req, res, next) {
 router.get('/parmums', function(req, res, next) {
   res.render('parmums', { title: 'Par Mums' });
 });
-router.get('/preces', function(req, res, next) {
-  res.render('preces', { title: 'Preces' });
+router.get('/preces', async function(req, res, next) {
+  const allProducts = await products.find({}).exec();
+
+  res.render('preces', { title: 'Preces' , Products: allProducts });
 });
 
 module.exports = router;
