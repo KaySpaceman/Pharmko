@@ -18,7 +18,7 @@ h2 {
 #header {
     font-size: 2.2em;
     text-align: center;
-    padding: 50px;
+    padding: 15px;
     background: #9fa09e;
     color: #ffe;
     border-radius: 15px;
@@ -29,19 +29,29 @@ h2 {
 }
 /*izvelne sākums */
 #sidenav {
-    width: 150px;
-    position: fixed;
+    display: flex;
     z-index: 1;
-    margin-top: 10px;
-    left: auto;
+    margin: 10px 0;
     background: #e1e3e4;
     overflow-x: hidden;
-    padding: 0 10px;
-    float : left;
     border-radius: 15px;
 }
-#sidenav a {
+
+#sidenav > p {
+    margin: 0;
     padding: 6px 8px 6px 16px;
+    border: 1px solid #141416;
+}
+
+#sidenav > p:first-of-type {
+    border-radius: 15px 0 0 15px;
+}
+
+#sidenav > p:last-of-type {
+    border-radius: 0 15px 15px 0;
+}
+
+#sidenav a {
     text-decoration: none;
     font-size: 15px;
     color: #605c5e;
@@ -54,7 +64,6 @@ h2 {
 
 /* content */
 #content {
-    margin-left: 200px;
     padding: 50px;
     font-size : 22px;
     background: #e1e3e4;
