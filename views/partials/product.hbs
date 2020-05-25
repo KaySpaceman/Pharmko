@@ -1,0 +1,17 @@
+{{#with Product}}
+    <div class="col-md-4">
+        <figure class="card card-product">
+            <div class="img-wrap"><img src="{{ImageUrl}}"></div>
+            <figcaption class="info-wrap">
+                <h4 class="title">{{Title}}</h4>
+                <p class="desc">{{Desc}}</p>
+            </figcaption>
+            <div class="bottom-wrap">
+                <a href="" class="btn btn-sm btn-primary float-right">Pirkt</a>
+                <div class="price-wrap h5">
+                    <span class="price-new">€{{Price}}</span> <del class="price-old">€{{PriceOld}}</del>
+                </div>
+            </div>
+        </figure>
+    </div>
+{{/with}}
