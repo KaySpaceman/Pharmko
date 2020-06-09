@@ -1,0 +1,9 @@
+<application>
+  <component name="ParameterNameHintsSettings">
+    <blacklists>
+      <blacklist language="JavaScript">
+        <added pattern="module:crypto.Hash.update(data,input_encoding)" />
+      </blacklist>
+    </blacklists>
+  </component>
+</application>
