@@ -5,5 +5,8 @@
         <added pattern="module:crypto.Hash.update(data,input_encoding)" />
       </blacklist>
     </blacklists>
+    <disabledLanguages>
+      <language id="JavaScript" />
+    </disabledLanguages>
   </component>
 </application>
